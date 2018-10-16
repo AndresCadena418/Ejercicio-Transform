@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #D0FFD7;
+}
+.containerindex{
+background-color: #2cae47;
+}
+.containerindex ul{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1300px;
+  text-align: center;
+}
+.containerindex ul li{
+  display: inline-block;
+}
+nav ul li a{
+line-height: 45px;
+  position: relative;
+  padding: 0px 34px;
+  font-family: monospace;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+nav ul li footer{
+  position: absolute;
+  top: 0;
+  width: 188px;
+  height: 46.3px;
+}
+.click footer,nav ul li:hover a footer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 35px;
+  width: 132px;
+  border: solid 2px gray;
+  box-sizing: border-box;
+  transition: .2s;
+}
+nav ul li a {
+  width: 121px;
+  height: 46.3px;
+}
+.click{
+  background-color: #28D744;
+}
+nav ul li a:hover{
+  background-color: #7DC3F3;
+  width: 121px;
+  height: 50px;
+}
+/*Titulo*/
+
+.h1 {
+  background-color: #2CAE85;
+  text-align: center;
+  color: black;
+  padding: 30px;
+}
+
+/*Imagenes*/
+
+div footer article ,div footer img{
+   width: 450px;
+   height: 380px;
+}
+
+
+/*Animaciones*/
+div footer{
+position: relative;
+top: 150px;
+margin: 0 auto;
+display: inline-block;
+}
+div footer article{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(241,156,27, .5);
+  transform: scale(0);
+  transition-property: transform;
+  transition: .35s;
+  transition-delay: 0s;
+}
+div footer:hover article{
+  transform: scale(1);
+}
+div footer:nth-child(1){
+  left: 270px;
+}
+div footer:nth-child(2){
+  left: 300px;
+}
+.cpuno footer article h1{
+  color: rgba(255,255,255, 0);
+  transform: translate(150px,-200px);
+  transition-property: color,transform;
+  transition-duration:.35s;
+  transition-delay:.35s,.35s;
+}
+.cpuno footer:hover article h1{
+ color: rgba(255,255,255, 1);
+ transform: translate(150px,10px);
+}
+.cpuno footer article p{
+  padding: 0px 60px;
+  color: rgba(255,255,255, 0);
+  transform: translate(0px,400px);
+  transition-property: color,transform;
+  transition-duration:.35s;
+  transition-delay:.35s,.35s;
+}
+.cpuno footer:hover article p{
+ color: rgba(255,255,255, 1);
+ transform: translate(0px,100px);
+}
+.cpuno footer article a{
+  position: absolute;
+  top: 0;
+  padding: 10px 15px;
+  color: white;
+  background-color: black;
+  transform: translate(180px,300px) scale(0);
+  transition-property: transform;
+  transition-duration: .35s;
+  transition-delay: .35s;
+  text-decoration: none;
+}
+.cpuno footer:hover article a{
+  transform: translate(180px,300px) scale(1);
+}
